@@ -1,0 +1,1 @@
+{"version":3,"names":["Text","View","HelloWord","React","createElement"],"sourceRoot":"../../src","sources":["hello-word.tsx"],"mappings":"AACA,SAASA,IAAI,EAAEC,IAAI,QAAQ,cAAc;AAGzC,MAAMC,SAA6B,GAAGA,CAAA,KAAM;EAC1C,oBACEC,KAAA,CAAAC,aAAA,CAACH,IAAI,qBACHE,KAAA,CAAAC,aAAA,CAACJ,IAAI,QAAC,WAAe,CACjB,CAAC;AAEX,CAAC;AACD,eAAeE,SAAS"}
