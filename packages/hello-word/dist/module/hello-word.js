@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native';
+import { Text, View } from "react-native";
 const HelloWord = () => {
   return /*#__PURE__*/React.createElement(View, null, /*#__PURE__*/React.createElement(Text, null, "HelloWord"));
 };

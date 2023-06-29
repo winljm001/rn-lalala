@@ -1,5 +1,5 @@
 {
-  "name": "@rn-lalala/hello-world",
+  "name": "@rn-lalala/core",
   "version": "0.0.1",
   "main": "dist/commonjs/index.js",
   "module": "dist/module/index.js",
@@ -24,6 +24,10 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@rn-lalala/hello-world": "workspace:^0.0.1",
+    "@rn-lalala/hello-world2": "workspace:^0.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

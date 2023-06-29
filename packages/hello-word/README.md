@@ -1,17 +1,31 @@
-# @md3-ui/divider
+---
+title: Hello World
+nav:
+  title: test
+  path: /component
+group:
+  title: 示例
+  path: /basic
+  order: 0
+---
 
-## Installation
+# Hello World
 
-```sh
-// with yarn
-yarn add @md3-ui/divider
+> 示例
 
-// with npm
-npm i @md3-ui/divider
-```
+<!-- <code src="./__fixtures__/demo.tsx"></code> -->
 
-## Import Components
+```tsx
+import type { FC } from "react"
+import { Text, View } from "react-native"
 
-```jsx
-import { Divider } from "@md3-ui/divider"
+export interface HelloWordProps {}
+const HelloWord: FC<HelloWordProps> = () => {
+  return (
+    <View>
+      <Text>HelloWord</Text>
+    </View>
+  )
+}
+export default HelloWord
 ```

@@ -17,5 +17,5 @@
     "target": "esnext"
   },
   "exclude": ["node_modules"],
-  "include": ["packages", "types"]
+  "include": ["packages", "types", ".dumi/**/*", ".dumirc.ts"]
 }
