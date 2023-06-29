@@ -48,5 +48,5 @@ pnpm --filter @rn-lalala/core add @rn-lalala/hello-world2 --workspace
 ### 更新依赖
 
 ```
-pnpm up -r --workspace @rn-lalala/hello-world2
+pnpm up -r --workspace "@rn-lalala/*"
 ```

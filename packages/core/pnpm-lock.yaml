@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@rn-lalala/hello-world': ^0.0.1
-  '@rn-lalala/hello-world2': workspace:^0.0.3
+  '@rn-lalala/hello-world': workspace:^0.0.4
+  '@rn-lalala/hello-world2': workspace:^0.0.6
   '@types/react': ^18.2.14
   react: 18.2.0
   react-native: 0.72.0

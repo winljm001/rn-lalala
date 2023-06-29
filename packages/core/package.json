@@ -26,8 +26,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@rn-lalala/hello-world": "workspace:^0.0.2",
-    "@rn-lalala/hello-world2": "workspace:^0.0.4"
+    "@rn-lalala/hello-world": "workspace:^0.0.4",
+    "@rn-lalala/hello-world2": "workspace:^0.0.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
