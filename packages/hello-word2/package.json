@@ -1,6 +1,6 @@
 {
   "name": "@rn-lalala/hello-world2",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/commonjs/index.js",
   "module": "dist/module/index.js",
   "react-native": "src/index.ts",

@@ -5,7 +5,7 @@ export interface HelloWordProps {}
 export const HelloWord: FC<HelloWordProps> = () => {
   return (
     <View>
-      <Text>HelloWord</Text>
+      <Text>HelloWord1</Text>
     </View>
   )
 }
