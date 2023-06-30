@@ -1,8 +1,8 @@
 import type { FC } from "react"
 import { Text, View } from "react-native"
 
-export interface HelloWordProps {}
-export const HelloWord: FC<HelloWordProps> = () => {
+export interface HelloWord1Props {}
+export const HelloWord1: FC<HelloWord1Props> = () => {
   return (
     <View>
       <Text>HelloWord1</Text>
