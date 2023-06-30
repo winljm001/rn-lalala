@@ -1,6 +1,6 @@
 {
   "name": "@rn-lalala/core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/commonjs/index.js",
   "module": "dist/module/index.js",
   "react-native": "src/index.ts",
@@ -26,8 +26,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@rn-lalala/hello-world": "workspace:^0.0.5",
-    "@rn-lalala/hello-world2": "workspace:^0.0.7"
+    "@rn-lalala/hello-world": "workspace:^0.0.6",
+    "@rn-lalala/hello-world2": "workspace:^0.0.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
