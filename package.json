@@ -10,6 +10,8 @@
     "dumi-build": "dumi build",
     "clean": "lerna clean -y && rimraf ./node_modules",
     "build": "lerna run build",
+    "release": "lerna publish",
+    "release:beta": "lerna publish --canary --preid beta",
     "lint": "tsc --noEmit  && eslint packages --ext .ts,.tsx"
   },
   "workspaces": [
