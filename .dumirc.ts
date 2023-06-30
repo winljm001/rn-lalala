@@ -29,6 +29,7 @@ export default defineConfig({
   },
   alias,
   themeConfig: {
+    name: "lalala",
     nav: [
       {
         title: "指南",
