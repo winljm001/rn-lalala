@@ -2,10 +2,10 @@
 title: Hello World
 nav:
   title: test
-  path: /component
+  path: /hello
 group:
-  title: 示例
-  path: /basic
+  title: 组件
+  path: /packages
   order: 0
 ---
 

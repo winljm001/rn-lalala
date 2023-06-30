@@ -1,8 +1,11 @@
 ---
 title: 📖 介绍
 order: 0
+nav:
+  title: 指南
 group:
   title: 开发指南
+  path: /guide
 ---
 
 # 介绍
