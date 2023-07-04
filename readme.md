@@ -50,3 +50,7 @@ pnpm --filter @rn-lalala/core add @rn-lalala/hello-world2 --workspace
 ```
 pnpm up -r --workspace "@rn-lalala/*"
 ```
+
+### workflow
+
+安装机器人 `changeset-bot`: https://github.com/apps/changeset-bot

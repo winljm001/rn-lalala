@@ -6,36 +6,55 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "versionup": "lerna version --conventional-commits --no-git-tag-version",
     "dumi": "dumi dev",
     "dumi-build": "dumi build",
-    "clean": "lerna clean -y && rimraf ./node_modules",
-    "build": "lerna run build",
-    "release": "lerna publish",
-    "release:beta": "lerna publish --canary --preid beta",
+    "build": "pnpm --filter=@rn-lalala/* run build",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install",
+    "commit": "cz",
+    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/",
     "lint": "tsc --noEmit  && eslint packages --ext .ts,.tsx"
   },
   "workspaces": [
     "packages/*"
   ],
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "dependencies": {
     "dumi-theme-mobile": "^2.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.72.0",
     "react-native-builder-bob": "^0.20.4",
-    "react-native-web": "^0.19.6",
-    "rimraf": "^5.0.1",
-    "typescript": "^5.1.6"
+    "react-native-web": "^0.19.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "@changesets/cli": "^2.26.2",
     "@fruits-chain/eslint-config-rn": "^0.2.23",
     "cross-env": "^7.0.3",
+    "rimraf": "^5.0.1",
     "dumi": "^2.2.1",
     "eslint": "^8.43.0",
-    "lerna": "^7.1.1",
     "prettier": "^2.8.8",
+    "typescript": "^5.1.6",
     "umi-plugin-react-native": "^0.5.0"
   }
 }

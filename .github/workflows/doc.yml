@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - uses: pnpm/action-setup@v2
         with:
-          version: 7.29.1
+          version: 7.x
       - name: install
         run: |
           pnpm install
