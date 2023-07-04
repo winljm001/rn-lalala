@@ -18,5 +18,4 @@ jobs:
           destination_branch: "main"
           pr_title: "Pulling ${{ github.ref }} into main"
           pr_body: "👑 *A new feature PR*"
-          pr_draft: true
           github_token: ${{ secrets.ACCESS_TOKEN }}
