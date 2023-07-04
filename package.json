@@ -8,8 +8,9 @@
   "scripts": {
     "dumi": "dumi dev",
     "dumi-build": "dumi build",
+    "postinstall": "husky install",
     "build": "pnpm -r run build",
-    "prepublish": "changeset && changeset version",
+    "ci:version": "changeset && changeset version && pnpm install --frozen-lockfile false",
     "ci:publish": "pnpm build && changeset publish",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "lint": "tsc --noEmit  && eslint packages --ext .ts,.tsx"
