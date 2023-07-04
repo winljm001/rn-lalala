@@ -43,8 +43,8 @@ jobs:
         uses: changesets/action@v1
         with:
           # 执行更新版本和发布的命令
-          version: pnpm run version
-          publish: pnpm exec changeset publish
+          version: pnpm version-packages
+          publish: pnpm release
           commit: "[ci] release"
           title: "[ci] release"
         env:
