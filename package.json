@@ -6,6 +6,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "versionup": "lerna version --conventional-commits --no-git-tag-version",
     "dumi": "dumi dev",
     "dumi-build": "dumi build",
     "clean": "lerna clean -y && rimraf ./node_modules",
@@ -28,6 +29,7 @@
     "typescript": "^5.1.6"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@fruits-chain/eslint-config-rn": "^0.2.23",
     "cross-env": "^7.0.3",
     "dumi": "^2.2.1",

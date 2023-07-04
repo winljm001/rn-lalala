@@ -13,7 +13,7 @@
 - [x] npmClient 使用 pnpm
 - [x] add 多包
 - [x] eslint
-- [ ] dumi 文档
+- [x] dumi 文档
 - [ ] change log
 - [ ] publish npm
 - [ ] github ci
