@@ -8,15 +8,10 @@
   "scripts": {
     "dumi": "dumi dev",
     "dumi-build": "dumi build",
-    "build": "pnpm --filter=@rn-lalala/* run build",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "husky install",
-    "commit": "cz",
+    "build": "pnpm -r run build",
+    "ci:version": "changeset version && pnpm install --frozen-lockfile false",
+    "ci:publish": "pnpm build && changeset publish",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "pnpm build && pnpm release:only",
-    "release:only": "changeset publish --registry=https://registry.npmjs.com/",
     "lint": "tsc --noEmit  && eslint packages --ext .ts,.tsx"
   },
   "workspaces": [

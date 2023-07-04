@@ -1,11 +1,10 @@
 # 整个流程的名字
-name: Release
+name: Version
 
-# 触发时机，在 main 分支 push 操作触发
 on:
   push:
     branches:
-      - main
+      - release/**
 
 # 默认shell
 defaults:
@@ -13,8 +12,8 @@ defaults:
     shell: bash
 
 jobs:
-  release:
-    name: Release
+  version:
+    name: Version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -33,21 +32,10 @@ jobs:
       # 安装依赖
       - name: Install dependencies
         run: pnpm install
-      # 打包
-      - name: Build Packages
-        run: pnpm run build
-      # 这一步是最重要的。使用changesets/action自动创建 PR 或者发布
-      - name: Create Release Pull Request or Publish
-        id: changesets
+      # 创建pr
+      - name: Create Release Pull Request
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
-          commit: "chore: update versions"
-          title: "chore: update versions"
-          publish: pnpm ci:publish
         env:
-          # 这里需要几个 Token 变量
-          # GITHUB_TOKEN 是 CI 里自带的默认 token
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          # NPM_TOKEN 需要稍后在 npm 网站生成。
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

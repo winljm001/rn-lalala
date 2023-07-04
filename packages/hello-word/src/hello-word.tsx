@@ -6,6 +6,7 @@ export const HelloWord: FC<HelloWordProps> = () => {
   return (
     <View>
       <Text>HelloWord</Text>
+      <Text>版本+1</Text>
     </View>
   )
 }
