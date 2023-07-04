@@ -5,6 +5,12 @@
 - `react-native-builder-bob` Simple set of CLIs to scaffold and build React
   Native libraries for different targets.
 
+- `changesets` The changesets workflow is designed to help when people are
+  making changes, all the way through to publishing. It lets contributors
+  declare how their changes should be released, then we automate updating
+  package versions, and changelogs, and publishing new versions of packages
+  based on the provided information.
+
 ## TODO
 
 - [x] lerna 初始化
@@ -12,9 +18,9 @@
 - [x] add 多包
 - [x] eslint
 - [x] dumi 文档
-- [ ] change log
-- [ ] publish npm
-- [ ] github ci
+- [x] change log
+- [x] publish npm
+- [x] github ci
 - [ ] test
 
 ## command
