@@ -47,6 +47,24 @@ pnpm up -r --workspace "@rn-lalala/*"
 
 安装机器人 `changeset-bot`: https://github.com/apps/changeset-bot
 
-# 开发流程
+## 开发者流程
 
-pnpm changeset
+1. 新建功能特性分支
+
+```
+git checkout -b feature/xxxx
+```
+
+2. 开发功能
+
+3. 管理版本
+
+```
+pnpm ci:version
+```
+
+## 管理者流程
+
+4. codeView pr
+
+如果 merge 有冲突，让提交的人重新合 `main`
