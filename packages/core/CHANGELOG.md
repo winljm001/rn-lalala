@@ -1,5 +1,13 @@
 # @rn-lalala/core
 
+## 0.0.8
+
+### Patch Changes
+
+- 39a9c07: test up
+- Updated dependencies [39a9c07]
+  - @rn-lalala/hello-world@0.0.11
+
 ## 0.0.7
 
 ### Patch Changes
