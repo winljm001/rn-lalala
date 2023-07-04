@@ -1,5 +1,11 @@
 # @rn-lalala/hello-world
 
+## 0.0.11
+
+### Patch Changes
+
+- 39a9c07: test up
+
 ## 0.0.10
 
 ### Patch Changes
