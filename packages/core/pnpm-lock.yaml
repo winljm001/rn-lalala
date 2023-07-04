@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@rn-lalala/hello-world': workspace:^0.0.8
+  '@rn-lalala/hello-world': workspace:^0.0.9
   '@rn-lalala/hello-world2': workspace:^0.0.8
   '@types/react': ^18.2.14
   react: 18.2.0
