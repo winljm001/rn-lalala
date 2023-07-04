@@ -41,9 +41,6 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          version: pnpm ci:version
-          commit: "chore: update versions"
-          title: "chore: update versions"
           publish: pnpm ci:publish
         env:
           # 这里需要几个 Token 变量

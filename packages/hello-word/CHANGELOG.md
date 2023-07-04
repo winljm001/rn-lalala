@@ -1,5 +1,11 @@
 # @rn-lalala/hello-world
 
+## 0.0.10
+
+### Patch Changes
+
+- +1 版本
+
 ## 0.0.9
 
 ### Patch Changes
