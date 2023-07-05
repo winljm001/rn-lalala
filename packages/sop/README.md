@@ -18,7 +18,7 @@ _请确保项目安装了上述包中`peerDependencies`列出的所有三方包�
 
 **使用**
 
-```tsx
+```tsx | pure
 import React from "react"
 import { SopForm, useSopForm } from "@rn-lalala/sop"
 
@@ -42,7 +42,7 @@ const Demo = () => {
 
 **使用**
 
-```tsx
+```tsx | pure
 import React from "react"
 import { SopPreview } from "@rn-lalala/sop"
 
