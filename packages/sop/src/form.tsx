@@ -53,7 +53,7 @@ export const useSopForm = () => {
   const [_form] = Form.useForm<SopFormValues>()
   // strictValidation为false时，部分校验规则会被关闭
   const form = useMemo(() => {
-    return { ..._form, strictValidation: true } as const
+    return { ..._form, strictValidation: true }
   }, [_form])
   return form
 }

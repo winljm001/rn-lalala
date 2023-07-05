@@ -1,0 +1,68 @@
+{
+  "name": "@rn-lalala/sop-pro",
+  "version": "1.2.7",
+  "description": "A higher abstracted component for sop",
+  "scripts": {
+    "build": "bob build",
+    "typecheck": "eslint",
+    "build-bundle": "rollup -c",
+    "gen": "fruits-chain-gc http://192.168.10.235:4001/graphql --folder src/graphql"
+  },
+  "keywords": [
+    "react-native",
+    "hj",
+    "sop-pro"
+  ],
+  "author": "changhuali <changhua.li.cq@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjfruit/bailu-app",
+    "directory": "packages/sop-pro"
+  },
+  "bugs": {
+    "url": "https://github.com/hjfruit/bailu-app/issues"
+  },
+  "homepage": "https://github.com/hjfruit/bailu-app/tree/master/packages/sop-pro#readme",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/module/index.js",
+  "types": "dist/typescript/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@apollo/client": "3.7.1",
+    "@fruits-chain/react-native-upload": "^2.2.0",
+    "@fruits-chain/react-native-xiaoshu": "^0.3.12",
+    "react": "^18.2.0",
+    "react-native": "^0.71.10",
+    "react-native-extended-stylesheet": "^0.12.0"
+  },
+  "devDependencies": {
+    "@apollo/client": "3.7.1",
+    "@fruits-chain/graphql-codegen-preset": "^0.3.1",
+    "@fruits-chain/react-native-upload": "^2.2.0",
+    "@fruits-chain/react-native-xiaoshu": "^0.3.12",
+    "@rn-lalala/sop": "workspace:*",
+    "@rn-lalala/upload": "workspace:*",
+    "@types/react": "^18.2.9",
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "react-native": "^0.71.10",
+    "react-native-extended-stylesheet": "^0.12.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.json"
+        }
+      ]
+    ]
+  }
+}
