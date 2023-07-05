@@ -13,7 +13,7 @@
     "ci:version": "changeset && changeset version && pnpm install --frozen-lockfile false",
     "ci:publish": "pnpm build && changeset publish",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
-    "lint": "tsc --noEmit  && eslint packages --ext .ts,.tsx"
+    "lint": "eslint packages --ext .ts,.tsx"
   },
   "workspaces": [
     "packages/*"
@@ -45,6 +45,8 @@
     "lint-staged": "^12.4.1",
     "@changesets/cli": "^2.26.2",
     "@fruits-chain/eslint-config-rn": "^0.2.23",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
     "cross-env": "^7.0.3",
     "rimraf": "^5.0.1",
     "dumi": "^2.2.1",

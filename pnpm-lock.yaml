@@ -5,6 +5,8 @@ specifiers:
   '@commitlint/cli': ^17.0.0
   '@commitlint/config-conventional': ^17.0.0
   '@fruits-chain/eslint-config-rn': ^0.2.23
+  '@typescript-eslint/eslint-plugin': ^5.9.1
+  '@typescript-eslint/parser': ^5.9.1
   cross-env: ^7.0.3
   cz-conventional-changelog: ^3.3.0
   dumi: ^2.2.1
@@ -35,6 +37,8 @@ devDependencies:
   '@commitlint/cli': 17.6.6
   '@commitlint/config-conventional': 17.6.6
   '@fruits-chain/eslint-config-rn': 0.2.23_knnjr7kq4rs2qtmvdkf5nzsniu
+  '@typescript-eslint/eslint-plugin': 5.60.1_nxpvb2fnld4vk2v7o3443dfbne
+  '@typescript-eslint/parser': 5.60.1_knnjr7kq4rs2qtmvdkf5nzsniu
   cross-env: 7.0.3
   cz-conventional-changelog: 3.3.0
   dumi: 2.2.1_v4scfki6v4phb7enilb2ff4n4a

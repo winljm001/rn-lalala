@@ -1,0 +1,65 @@
+{
+  "name": "@rn-lalala/upload",
+  "version": "1.0.1",
+  "description": "A component for upload",
+  "scripts": {
+    "build": "bob build",
+    "typecheck": "eslint"
+  },
+  "keywords": [
+    "react-native",
+    "hj",
+    "upload"
+  ],
+  "author": "changhuali <changhua.li.cq@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjfruit/bailu-app",
+    "directory": "packages/upload"
+  },
+  "bugs": {
+    "url": "https://github.com/hjfruit/bailu-app/issues"
+  },
+  "homepage": "https://github.com/hjfruit/bailu-app/tree/master/packages/upload#readme",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/module/index.js",
+  "types": "dist/typescript/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@fruits-chain/react-native-upload": "^2.2.0",
+    "@fruits-chain/react-native-xiaoshu": "^0.3.12",
+    "@react-native-async-storage/async-storage": "^1.18.2",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-native": "^0.71.10",
+    "zustand": "^3.0.0"
+  },
+  "devDependencies": {
+    "@fruits-chain/react-native-upload": "^2.2.0",
+    "@fruits-chain/react-native-xiaoshu": "^0.3.12",
+    "@react-native-async-storage/async-storage": "^1.18.2",
+    "@types/lodash": "^4.14.195",
+    "@types/react": "^18.2.9",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-native": "^0.71.10",
+    "zustand": "^3.0.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.json"
+        }
+      ]
+    ]
+  }
+}

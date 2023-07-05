@@ -1,20 +1,21 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "downlevelIteration": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "jsx": "react-jsx",
-    "lib": ["dom", "esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
+    "lib": ["ESNext"],
     "skipLibCheck": true,
-    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
     "strict": true,
-    "target": "esnext"
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true
   },
   "exclude": ["node_modules"],
   "include": ["packages", "types", ".dumi/**/*", ".dumirc.ts"]

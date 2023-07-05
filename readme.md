@@ -13,8 +13,7 @@
 
 ## TODO
 
-- [x] lerna 初始化
-- [x] npmClient 使用 pnpm
+- [x] 使用 pnpm
 - [x] add 多包
 - [x] eslint
 - [x] dumi 文档

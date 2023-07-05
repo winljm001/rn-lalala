@@ -10,7 +10,7 @@ const pkgList = readdirSync(join(__dirname, "packages")).filter(
 )
 
 const alias = pkgList.reduce(
-  (pre, pkg) => {
+  (pre: any, pkg) => {
     pre[`@rn-lalala/${pkg}`] = join(__dirname, "packages", pkg, "src")
     return {
       ...pre,
