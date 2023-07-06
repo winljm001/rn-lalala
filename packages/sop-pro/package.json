@@ -13,6 +13,9 @@
     "hj",
     "sop-pro"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "changhuali <changhua.li.cq@gmail.com>",
   "license": "MIT",
   "repository": {
